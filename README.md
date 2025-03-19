@@ -2,9 +2,8 @@
 
 > Simulação de uma máquina de doces interativa e pixelada, desenvolvida como parte de um estudo sobre **Autômatos Finitos Determinísticos (AFD)**.
 
-![Máquina de Doces](static/machine-preview.png)
 
-## 📌 Descrição do Projeto
+## 📌 Descrição:
 Este projeto simula uma máquina de doces onde o usuário pode **inserir moedas** (R$1, R$2, R$5), **selecionar doces disponíveis** e **receber troco** caso necessário. O sistema utiliza conceitos de **teoria dos autômatos** e programação interativa para criar uma experiência visual e funcional.
 
 A interface foi projetada com um **design pixelado**, simulando uma **máquina retrô**, com um **visor digital, botões interativos e uma animação dos doces caindo na saída**.

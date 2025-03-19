@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina de Doces Pixelada</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <h1 id="title">🍬 Candy Machine 🍭</h1>
+
+        <!-- Visor Digital -->
+        <div id="screen">
+            <p id="message">💬 Insira uma moeda para começar!</p>
+            <p id="balance">Saldo: <span id="saldo">0</span></p>
+        </div>
+
+        <!-- Botões de Moedas -->
+        <div id="coin-buttons">
+            <button class="pixel-btn coin" data-value="1">🪙 R$1</button>
+            <button class="pixel-btn coin" data-value="2">🪙 R$2</button>
+            <button class="pixel-btn coin" data-value="5">🪙 R$5</button>
+        </div>
+
+        <!-- Botões de Doces -->
+        <div id="candy-buttons">
+            <button class="pixel-btn candy" data-doce="A">🍬 Doce A (R$6)</button>
+            <button class="pixel-btn candy" data-doce="B">🍭 Doce B (R$7)</button>
+            <button class="pixel-btn candy" data-doce="C">🍫 Doce C (R$8)</button>
+        </div>
+
+        <!-- Saída dos Doces -->
+        <div id="candy-exit">⬇️ Saída</div>
+
+        <!-- Botão de Troco -->
+        <button id="troco" class="pixel-btn">💰 Pegue o Troco</button>
+
+        <!-- Histórico de Doces -->
+        <div id="history-screen">
+            <h3>📜 Histórico de Doces:</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+
+    <script src="static/game.js"></script>
+</body>
+</html>

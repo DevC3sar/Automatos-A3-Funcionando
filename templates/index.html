@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina de Doces 🍬</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='game.js') }}" defer></script>
+
+</head>
+<body>
+
+    <h1>Máquina de Doces 🎮</h1>
+
+    <div class="controls">
+        <p id="saldo">Saldo: R$ 0,00</p>
+        <button onclick="inserirDinheiro(1)">💰 Inserir R$1</button>
+        <button onclick="inserirDinheiro(2)">💰 Inserir R$2</button>
+        <button onclick="inserirDinheiro(5)">💰 Inserir R$5</button>
+    </div>
+
+    <div class="controls">
+        <button onclick="comprarDoce('A')">🍫 Doce A (R$6)</button>
+        <button onclick="comprarDoce('B')">🍬 Doce B (R$7)</button>
+        <button onclick="comprarDoce('C')">🍩 Doce C (R$8)</button>
+    </div>
+
+    <div class="controls">
+        <button onclick="resgatarTroco()">💵 Resgatar Troco</button>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    
+
+</body>
+</html>

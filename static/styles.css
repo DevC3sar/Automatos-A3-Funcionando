@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background: #111;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estrutura da Máquina */
+#game-container {
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #aa4465;
+    border: 12px solid #ffcc00;
+    box-shadow: 10px 10px 0px #660000;
+    border-radius: 15px;
+    position: relative;
+}
+
+/* Visor Digital */
+#screen {
+    background: black;
+    color: #00FF00; /* Verde Neon */
+    border: 6px solid #555;
+    padding: 15px;
+    font-size: 18px;
+    height: 80px;
+    text-align: center;
+}
+
+/* Moedas */
+#coin-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Botões Pixelados */
+.pixel-btn {
+    font-family: 'Press Start 2P', cursive;
+    background: #ff5733;
+    color: white;
+    border: 5px solid #8b0000;
+    padding: 12px 0;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 5px 5px 0px black;
+    transition: transform 0.1s ease-in-out;
+    width: 140px;
+    height: 50px;
+}
+
+/* Visor do Histórico */
+#history-screen {
+    width: 350px;
+    height: 100px;
+    background: black;
+    color: #0aff0a;
+    font-size: 14px;
+    padding: 10px;
+    border: 5px solid #ffcc00;
+    margin: 20px auto;
+    overflow-y: auto;
+}
+
+/* Efeito do Histórico Piscando */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.history-item {
+    animation: blink 1s infinite;
+    margin-bottom: 5px;
+}
+
+/* Saída do Doce */
+#candy-exit {
+    width: 200px;
+    height: 70px;
+    background: black;
+    border: 6px solid #ff5733;
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+/* Animação do doce caindo */
+@keyframes dropCandy {
+    0% { top: -50px; opacity: 0; }
+    30% { opacity: 1; }
+    100% { top: 50px; opacity: 1; }
+}
+
+.candy-drop {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    opacity: 1;
+    animation: dropCandy 0.8s ease-out forwards;
+}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background: #111;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Visor Digital */
+#screen {
+    background: black;
+    color: #00FF00; /* Verde Neon */
+    border: 6px solid #555;
+    padding: 15px;
+    font-size: 18px;
+    height: 80px;
+    text-align: center;
+}
+
+/* Moedas */
+#coin-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Botões Pixelados */
+.pixel-btn {
+    font-family: 'Press Start 2P', cursive;
+    background: #ff5733;
+    color: white;
+    border: 5px solid #8b0000;
+    padding: 12px 0;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 5px 5px 0px black;
+    transition: transform 0.1s ease-in-out;
+    width: 140px;
+    height: 50px;
+}
+
+/* Visor do Histórico */
+#history-screen {
+    width: 350px;
+    height: 100px;
+    background: black;
+    color: #0aff0a;
+    font-size: 14px;
+    padding: 10px;
+    border: 5px solid #ffcc00;
+    margin: 20px auto;
+    overflow-y: auto;
+}
+
+/* Animação do doce caindo */
+@keyframes dropCandy {
+    0% { top: -50px; opacity: 0; }
+    30% { opacity: 1; }
+    100% { top: 50px; opacity: 1; }
+}
+
+.candy-drop {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    opacity: 1;
+    animation: dropCandy 0.8s ease-out forwards;
+}

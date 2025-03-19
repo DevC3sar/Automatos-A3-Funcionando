@@ -1,4 +1,4 @@
-# 🍬 Máquina de Doces Pixelada
+# 🍬 Máquina de Doces AFD
 
 > Simulação de uma máquina de doces interativa e pixelada, desenvolvida como parte de um estudo sobre **Autômatos Finitos Determinísticos (AFD)**.
 
